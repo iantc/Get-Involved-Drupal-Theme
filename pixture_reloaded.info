@@ -10,6 +10,7 @@
 ;----------// Style sheets
   stylesheets[all][] = color/colors.css
   stylesheets[all][] = css/pixture_reloaded.css
+  stylesheets[all][] = css/getinvolved.css
   stylesheets[all][] = css/pixture_reloaded.settings.style.css
 
   scripts[] = js/script.js
