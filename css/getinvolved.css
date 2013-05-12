@@ -3,8 +3,22 @@
 }
 #block-current-search-standard{
 }
+.apachesolr #columns{
+  line-height: 20px;
+}
+.apachesolr #main-content{
+  max-width: 700px;
+}
 .apachesolr #main-content .block-content{
   padding: 0;
+}
+.apachesolr.sidebar-second .content-inner {
+margin-right: 40%;
+}
+#block-apachesolr-search-sort{
+  float: right;
+  position: relative;
+  z-index: 5;
 }
 .apachesolr #search-block-form #edit-search-block-form--2{
   width: 229px;
@@ -19,9 +33,10 @@ html.js input.form-autocomplete {
 }
 .apachesolr #search-form{
 }
-.apachesolr.section-search h2{
+/*.apachesolr.section-search h2{
   display: none
-}
+}*/
+
 .apachesolr #block-current-search-standard h3{
   font-weight: normal;
   text-transform: none;
@@ -36,9 +51,18 @@ html.js input.form-autocomplete {
   margin-left: 0;
   clear: both;
 }
+.apachesolr_search-results .search-info{
+  font-size:12px;
+  background: #F6F6F6;
+  padding: 2px 10px;
+  color: #777;
+}
 .apachesolr_search-results li{
-  margin-bottom: 23px;
-  max-width: 660px;
+  margin-bottom: 15px;
+  max-width: 760px;
+  clear: both;
+  padding: 10px 1px;
+  border-top: 1px solid #ddd;
 }
 .apachesolr_search-results h3{
   font-weight: normal;
@@ -51,6 +75,10 @@ html.js input.form-autocomplete {
 }
 .apachesolr_search-results .search-snippet-info{
   padding-left: 0;
+}
+.apachesolr_search-results .search-info-date{
+  padding:3px 10px 3px 0;
+  float: left
 }
 #block-apachesolr-search-sort .item-list ul{
   clear: both;
@@ -73,17 +101,7 @@ html.js input.form-autocomplete {
   font-weight: normal;
   display: inline-block;
   margin-left: 30px;
-  display: inline-block;
   padding: 3px 7px;
-  font-size: 11.844px;
-  line-height: 14px;
-  color: #3A87AD;
-  white-space: nowrap;
-  vertical-align: baseline;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-  background-color: #D8E6EF;
 }
 
 /* form buttons */
