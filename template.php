@@ -177,3 +177,7 @@ function pixture_reloaded_preprocess_search_results(&$vars) {
     ));
   }
 }
+
+function pixture_reloaded_preprocess_search_result(&$vars) {
+  $vars['classes_array'][] = $vars['zebra'];
+}
