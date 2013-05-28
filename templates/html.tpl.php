@@ -13,6 +13,8 @@
 <meta http-equiv="cleartype" content="on">
 <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
 <title><?php print $head_title; ?></title>
+<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+<link href="//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.min.css" rel="stylesheet">
 <?php print $styles; ?>
 <?php print $scripts; ?>
 <!--[if lt IE 9]>
