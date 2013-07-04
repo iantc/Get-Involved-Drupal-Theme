@@ -14,7 +14,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
   <title><?php print $head_title; ?></title>
   <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
-  <link href="//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.min.css" rel="stylesheet">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
   <?php print $styles; ?>
   <?php print $scripts; ?>
   <script type="text/javascript">
@@ -23,6 +23,15 @@
       jQuery('#menu-bar .menu a.active').parent().addClass('active');
       jQuery('#search-form').next('ul').wrap('<div class="alert alert-info" id="search-help">');
       jQuery('#search-help').prepend('<h3>Need Help?</h3>');
+      jQuery('.facetapi-limit-link').prepend('<i class="icon-collapse"></i> ');
+      jQuery('.facetapi-limit-link').toggle(
+        function(){
+          jQuery(this).prepend('<i class="icon-collapse-top"></i> ');
+        },
+        function(){
+          jQuery(this).prepend('<i class="icon-collapse"></i> ');
+        }
+      );
     });
   </script>
   <!--[if lt IE 9]>

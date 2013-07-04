@@ -34,6 +34,9 @@ h1{
   text-transform: none;
   font-size: 32.5px;
 }
+a:link,a:visited,a:hover{
+  text-decoration: none;
+}
 
 
 /* main nav menu */
@@ -85,7 +88,12 @@ h1{
 }
 
 
-/* apache solr search */
+/* apache solr search page */
+.page-search .apachesolr-browse-blocks{
+  margin-top: 20px;
+  float: left;
+  width: 99%;
+}
 .apachesolr #tasks{
   display: none;
 }
@@ -119,12 +127,46 @@ html.js input.form-autocomplete {
 .apachesolr .region-sidebar-second .block-inner{
   background: none;
 }
-.apachesolr #search-form{
+
+
+/*  Search Form */
+#search-form #edit-keys{
+  margin: 0;
+}
+#search-help{
+  max-width:550px;
+  margin:50px 0 0;
+}
+#block-apachesolr-search-sort{
+  position: absolute;
+  margin-top:50px;
+  left: 250px;
+}
+#block-apachesolr-search-sort .block-inner{
+  margin: 0;
+  border: none;
+  background: transparent;
+}
+#search-results-wrapper{
+  margin: 21px 0 0;
+}
+#block-apachesolr-search-sort h2{
+  display: none;
+}
+.page-search #search-form .form-type-textfield label{
+  display: none;
+}
+.page-search #search-form .form-type-textfield #edit-keys{
+  max-width: 350px;
+  width: 100%;
+}
+.apachesolr.section-search .form-item-keys label{
+  display: none;
 }
 /*.apachesolr.section-search h2{
   display: none
 }*/
-
+.form-item-retain-filters{}
 .apachesolr #block-current-search-standard h3{
   font-weight: normal;
   text-transform: none;
@@ -132,9 +174,9 @@ html.js input.form-autocomplete {
 .apachesolr .current-search-item-active{
   display: none;
 }
-.apachesolr.section-search .form-item-keys label{
-  display: none;
-}
+
+
+/* apache solr search results */
 .apachesolr_search-results{
   margin-left: 0;
   clear: both;
@@ -182,6 +224,78 @@ html.js input.form-autocomplete {
 .apachesolr .region-sidebar-second {
   width: 40%;
   margin-left: -40%;
+}
+
+
+/* apache solr facets */
+.facetapi-facetapi-checkbox-links a{
+  display: inline-block;
+  margin-left: 5px;
+}
+.facetapi-facetapi-checkbox-links .facetapi-checkbox{
+  margin: 0;
+}
+#block-system-main .block-facetapi{
+  float: left;
+  width: 300px;
+  margin: 0 6.5% 10px 0;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -khtml-border-radius: 4px;
+  border-radius: 4px;
+  border: none;
+}
+#block-facetapi-apachesolr-bundle{
+  clear: both;
+}
+.block .item-list .facetapi-facetapi-checkbox-links{
+  margin-left: 5px;
+}
+.block-facetapi li{
+  list-style: none!important;
+  margin-left: 0!important;
+}
+.block-facetapi .facetapi-facetapi-checkbox-links li{
+  margin-left: 10px !important;
+}
+.block-facetapi li input[type="checkbox"] {
+  float: left;
+  margin:4px 0 0 -15px;
+}
+.facetapi-limit-link{
+  margin: 15px 0 0;
+  display: block;
+}
+.facetapi-limit-link i{
+  color: #666;
+}
+#block-system-main .block-facetapi .block-inner{
+  margin: 0;
+}
+.block-facetapi .block-content{
+  padding:10px 0;
+}
+#block-system-main .apachesolr-browse-blocks h2,
+#block-system-main .apachesolr-browse-blocks p{
+  display: none;
+}
+#block-system-main .apachesolr-browse-blocks .block-facetapi h2,
+#block-system-main .apachesolr-browse-blocks .block-facetapi p{
+  display: block;
+}
+#block-system-main .apachesolr-browse-blocks .block-facetapi h2,
+.sidebar .block-facetapi .block-title{
+  background: transparent;
+  color:#555;
+  font-weight: bold;
+  border-bottom: 2px solid #999;
+  margin: 10px 0 0;
+  padding: 0 0 5px;
+  line-height: normal;
+}
+.sidebar .block-facetapi .block-inner{
+  border: none;
+  background: transparent;
 }
 
 
@@ -282,40 +396,9 @@ textarea, input[type="text"], input[type="password"], input[type="datetime"], in
   vertical-align: middle;
 }
 
-/* Site Search Form */
-#search-form #edit-keys{
-  margin: 0 4px;
-}
-#search-help{
-  max-width:550px;
-  margin:50px 0 0;
-}
-#block-apachesolr-search-sort{
-  position: absolute;
-  margin-top:50px;
-  left: 250px;
-}
-#block-apachesolr-search-sort .block-inner{
-  margin: 0;
-  border: none;
-  background: transparent;
-}
-#search-results-wrapper{
-  margin: 21px 0 0;
-}
-#block-apachesolr-search-sort h2{
-  display: none;
-}
 
 
-/* search facets */
-.facetapi-facetapi-checkbox-links a{
-  display: inline-block;
-  margin-left: 5px;
-}
-.facetapi-facetapi-checkbox-links .facetapi-checkbox{
-  margin: 0;
-}
+
 
 
 /* page nodes */
