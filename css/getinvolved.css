@@ -17,6 +17,9 @@
 }
 
 
+/* typography */
+
+
 /* base components */
 select{
   height:30px !important;
@@ -174,12 +177,20 @@ html.js input.form-autocomplete {
 .apachesolr .current-search-item-active{
   display: none;
 }
+.form-item-retain-filters{
+  margin-left: 40px;
+}
 
 
 /* apache solr search results */
 .apachesolr_search-results{
   margin-left: 0;
   clear: both;
+}
+#facetapi-facet-apachesolracquia-search-server-1-block-bundle i{
+  font-size:19px;
+  color:#777;
+  margin-right: 3px;
 }
 .apachesolr_search-results .search-info{
   font-size:12px;
@@ -188,20 +199,28 @@ html.js input.form-autocomplete {
   color: #777;
 }
 .apachesolr_search-results li{
-  margin-bottom: 15px;
-  max-width: 760px;
+  margin-bottom: 8px!important;
+  max-width: 500px;
   clear: both;
-  padding: 10px 1px;
-  border-top: 1px solid #ddd;
-}
-.apachesolr_search-results h3{
-  font-weight: normal;
-  margin: 0;
   padding: 0;
+  border-top: none;
+}
+.apachesolr_search-results .search-result-wrapper .title{
+  font-weight: normal;
+  float: left;
+  margin: 0;
+  padding: 6px 0 0;
   text-transform: none !important;
+  line-height: normal;
+  text-decoration: none;
 }
 .apachesolr_search-results p{
   margin:0;
+}
+..search-info-type {
+  background: #eee;
+  color: #777;
+  text-shadow: none;
 }
 .apachesolr_search-results .search-snippet-info{
   padding-left: 0;
@@ -225,7 +244,27 @@ html.js input.form-autocomplete {
   width: 40%;
   margin-left: -40%;
 }
-
+div.item-list ul.pager li,
+div.item-list ul.pager li:hover,
+div.item-list ul.pager li:focus,
+div.item-list ul.pager li.pager-current,
+div.item-list ul.pager li.pager-current a.active {
+  border: none;
+  margin:0 5px;
+  padding: 0;
+}
+.pager-next,.pager-last{
+  white-space: nowrap;
+}
+.item-list .pager .pager-current{
+  display: inline-block;
+  padding: 5px 14px!important;
+  background-color: #f1f1f1;
+  border: 1px solid #cdcdcd!important;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+}
 
 /* apache solr facets */
 .facetapi-facetapi-checkbox-links a{
@@ -265,6 +304,9 @@ html.js input.form-autocomplete {
 .facetapi-limit-link{
   margin: 15px 0 0;
   display: block;
+  position: absolute;
+  right: 12px;
+  top: 0;
 }
 .facetapi-limit-link i{
   color: #666;
@@ -293,11 +335,19 @@ html.js input.form-autocomplete {
   padding: 0 0 5px;
   line-height: normal;
 }
-.sidebar .block-facetapi .block-inner{
+.sidebar .block-facetapi .block-inner,
+.content-type-filter .block-inner{
   border: none;
   background: transparent;
 }
-
+.content-type-filter .block-content{
+  padding: 0 0 10px;
+}
+.content-type-filter li.leaf{
+  float: left;
+  margin: 0 25px 0;
+  padding: 0;
+}
 
 /* tags */
 .search-info-type {
