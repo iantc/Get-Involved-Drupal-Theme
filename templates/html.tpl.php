@@ -32,6 +32,10 @@
           jQuery(this).prepend('<i class="icon-collapse"></i> ');
         }
       );
+      jQuery('#facetapi-link--61').prepend('<i class="icon-wrench"></i> ');
+      jQuery('#facetapi-link--62').prepend('<i class="icon-picture"></i> ');
+      jQuery('#facetapi-link--63').prepend('<i class="icon-list-ul"></i> ');
+      jQuery('#facetapi-link--64').prepend('<i class="icon-group"></i> ');
     });
   </script>
   <!--[if lt IE 9]>
